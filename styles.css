@@ -1,0 +1,300 @@
+* {
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, a {
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+}
+
+p{
+    text-align: center;
+    /* font-size: 13px; */
+    color: hsl(201, 11%, 66%);
+}
+
+button:hover {
+    opacity: 70%;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px black;
+}
+
+a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+footer .socials img {
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/* ********************** */
+/* *****FIRST SECTION**** */
+/* ********************** */
+
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-image: url(/clipboard-landing-page-master/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-section p {
+    text-align: center;
+}
+
+.download-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iOS-download, .mac-download {
+    margin: 10px;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.iOS-download {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.mac-download {
+    background-color: hsl(233, 100%, 69%);
+}
+
+/* ********************** */
+/* ****SECOND SECTION**** */
+/* ********************** */
+.second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.second-section p {
+    text-align: center;
+    line-height: 30px;
+}
+
+/* ********************** */
+/* ****THIRD SECTION***** */
+/* ********************** */
+.third-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.features h3 {
+    text-align: left;
+}
+
+.features p {
+    line-height: 30px;
+    text-align: left;
+}
+
+/* ********************** */
+/* ****FOURTH SECTION***** */
+/* ********************** */
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 90px;
+}
+
+.fourth-section p, .fourth-section h1 {
+    text-align: center;
+}
+
+.access {
+    margin-bottom: 30px;
+}
+
+/* ********************** */
+/* ****FIFTH SECTION***** */
+/* ********************** */
+.fifth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 50px;
+}
+
+.tools p, .tools h3, .tools h1, .bl-img, .pl-img, .sn-img{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ********************** */
+/* ****SIXTH SECTION***** */
+/* ********************** */
+.sixth-section {
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+margin: 50px 0;
+}
+
+/* ********************** */
+/* ****SEVENTH SECTION***** */
+/* ********************** */
+.seventh-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+}
+
+.seventh-section .download-buttons {
+    width: 30%;
+}
+
+/* ********************** */
+/* ****FOOTER**** */
+/* ********************** */
+footer {
+    display: flex;
+    align-items: center;
+    background-color: rgba(220, 220, 220, 0.281);
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.options {
+    display: flex;
+    line-height: 40px;
+}
+
+.logo-f img {
+    width: 30px;
+}
+
+a {
+    margin: 20px;
+    text-decoration: none
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .desktop-img img, .devices-img img {
+        width: 70%;
+    }
+
+    .desktop-img, .devices-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .first-section {
+        background-image: url(/clipboard-landing-page-master/images/bg-header-mobile.png);
+    }
+
+    .download-buttons {
+        flex-direction: column;
+    }
+
+    .third-section {
+        flex-direction: column;
+    }
+
+    .third-section p, .third-section h3 {
+        text-align: center;
+    }
+
+    .tools {
+        flex-direction: column;
+    }
+
+    .sixth-section {
+        flex-direction: column;
+    }
+
+    .sixth-section img {
+        margin: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .logo-f img {
+        width: 50px;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-row, .second-row {
+        display: flex;
+        flex-direction: column;
+        height: 20%;
+    }
+
+    a {
+        margin: 0 10px;
+    }
+
+    .first-row br, .second-row br {
+        display: none;
+    }
+
+    .seventh-section button {
+        width: fit-content;
+    }
+}
